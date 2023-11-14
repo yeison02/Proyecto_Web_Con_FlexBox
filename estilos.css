@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body {
@@ -12,6 +12,9 @@ a {
 .padre {
   display: flex;
   flex-flow: column nowrap;
+}
+.margen-interno {
+  padding: 0 50px;
 }
 .header {
   background: url(../imagenes/2.jpg);
@@ -65,40 +68,91 @@ a {
   color: #343434;
 }
 .texto-principal {
-  background-color: #f3b664;
+  height: 580px;
+  display: flex;
+  align-items: center;
 }
 h1 {
-  background-color: #f1eb90;
+  font-size: 21px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
 }
 .section {
-  background: #000;
+  background: #f7f7f7;
   display: flex;
 }
 .articulos {
-  background-color: #ec8f5e;
+  background-color: #f7f7f7;
   flex: 2 1 auto;
   display: flex;
   flex-flow: row wrap;
 }
 .article {
-  background-color: #9fbb73;
   flex: 1 1 40%;
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0px;
+  flex: 1 1 45%;
+  background: #ececec;
 }
+.article a {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  margin: 10px 0;
+  display: inline-block;
+}
+.article a:hover {
+  background: #546cc3;
+}
+h3 {
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 0;
+  margin-top: -80px;
+}
+h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0px 0 10px 0;
+  color: #fff;
+}
+
 .article img {
-  width: 500px;
+  width: 100%;
   height: 281px;
 }
 .navegacion {
-  background-color: #dcbfff;
+  background-color: #000;
   flex: 1 1 100%;
+  margin: 10px 10px 0 0px;
+}
+.navegacion a {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
 }
 .aside {
-  background-color: #e5d4ff;
   flex: 1 1 auto;
+  margin: 10px 5px 10px 0;
 }
-.publicidad {
-  background-color: #d2de32;
+.aside img {
+  width: 100%;
+  height: 281px;
 }
+h4 {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 .publicidad img {
   width: 500px;
   height: 281px;
@@ -107,11 +161,19 @@ h1 {
   background: #000;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 .pie {
-  background-color: #f1eb90;
-  width: 300px;
+  text-align: center;
 }
+.pie a {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
 @media all and (max-width: 800px) {
   .section {
     flex-direction: column;
