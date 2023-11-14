@@ -1,10 +1,13 @@
 * {
-  margin: 10px;
+  margin: 0px;
   padding: 10px;
   box-sizing: border-box;
 }
 body {
   font-family: "lora";
+}
+a {
+  text-decoration: none;
 }
 .padre {
   display: flex;
@@ -19,26 +22,47 @@ body {
   flex-flow: column nowrap;
 }
 .menu {
-  background-color: #83a2ff;
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-flow: row nowrap;
-  height: 100px;
+  height: 60px;
   align-items: center;
+  border-bottom: 1px solid white;
 }
 .logo {
-  background-color: #ffd28f;
   flex: 1 1 auto;
-  height: 30px;
+}
+.logo a {
+  color: white;
+  font-size: 30px;
+}
+.logo a:hover {
+  color: #343434;
 }
 .nav {
-  background-color: #ffd28f;
   flex: 5 1 auto;
-  height: 30px;
+}
+.nav a {
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+.nav a:hover {
+  color: #343434;
 }
 .social {
-  background-color: #ffd28f;
   flex: 1 1 auto;
-  height: 30px;
+  display: flex;
+}
+.social a {
+  font-size: 15px;
+  color: white;
+  padding: 0 5px;
+}
+.social a:hover {
+  color: #343434;
 }
 .texto-principal {
   background-color: #f3b664;
