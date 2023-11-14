@@ -84,6 +84,10 @@ h1 {
   background-color: #9fbb73;
   flex: 1 1 40%;
 }
+.article img {
+  width: 500px;
+  height: 281px;
+}
 .navegacion {
   background-color: #dcbfff;
   flex: 1 1 100%;
@@ -94,6 +98,10 @@ h1 {
 }
 .publicidad {
   background-color: #d2de32;
+}
+.publicidad img {
+  width: 500px;
+  height: 281px;
 }
 .footer {
   background: #000;
