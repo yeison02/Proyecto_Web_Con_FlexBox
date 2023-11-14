@@ -3,6 +3,9 @@
   padding: 10px;
   box-sizing: border-box;
 }
+body {
+  font-family: "lora";
+}
 .padre {
   display: flex;
   flex-flow: column nowrap;
