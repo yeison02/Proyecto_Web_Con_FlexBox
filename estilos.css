@@ -44,10 +44,11 @@ a {
 }
 .nav {
   flex: 5 1 auto;
+  text-align: center;
 }
 .nav a {
   color: white;
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   padding: 0 10px;
   letter-spacing: 2px;
@@ -174,7 +175,7 @@ h4 {
   letter-spacing: 2px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1120px) {
   .section {
     flex-direction: column;
   }
@@ -186,10 +187,24 @@ h4 {
     display: flex;
     justify-content: center;
   }
+  h1 {
+    font-size: 15px;
+  }
+  .texto-principal {
+    height: 480px;
+  }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 762px) {
   .articulos {
     flex-direction: column;
+  }
+}
+@media all and (max-width: 650px) {
+  .off {
+    display: none;
+  }
+  .nav a {
+    font-size: 20px;
   }
 }
 @media all and (max-width: 400px) {
